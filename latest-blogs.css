@@ -170,6 +170,7 @@ body{
     overflow: hidden;
     text-align: center;
     transition: transform 0.3s;
+    height: 335px;
 }
 
 .blog1-card:hover {
@@ -201,6 +202,7 @@ body{
     overflow: hidden;
     text-align: center;
     transition: transform 0.3s;
+    height: 335px;
 }
 
 .blog2-card:hover {
@@ -232,6 +234,7 @@ body{
     overflow: hidden;
     text-align: center;
     transition: transform 0.3s;
+    height: 335px;
 }
 
 .blog3-card:hover {
