@@ -1,0 +1,165 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Raleway:wght@700&display=swap);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+
+@media (max-width: 600px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        background: #000;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        width: 200px;
+        border-radius: 5px;
+        overflow: hidden;
+        height: 0;
+        opacity: 0;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: opacity 0.3s ease;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .navbar.active {
+        height: auto;
+        opacity: 1;
+        transform: scaleY(1);
+    }
+
+    /* Hamburger icon */
+    .hamburger {
+        display: block;
+        font-size: 26px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    /* Remove underline effect for navbar links when in dropdown mode */
+    .navbar a::before {
+        display: none;
+    }
+}
+
+@media (max-width: 450px){
+    .banner-text{
+        font-size: 32px !important;
+    }
+    
+    .email{
+        font-size: 15px !important;
+    }
+
+    .inquiries{
+        font-size: 9.5px !important;
+    }
+}
+
+
+@media (max-height: 450px){
+    .banner-text{
+        font-size: 32px !important;
+    }
+    
+    .email{
+        font-size: 15px !important;
+    }
+
+    .inquiries{
+        font-size: 9.5px !important;
+    }
+}
+
+
+body{
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.logo {
+    font-size: 26px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #e94560;
+    transition: .3s;
+}
+
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+/* Banner */
+.banner{
+    background-image: url(images/contact/contact-main-image.png);
+    background-size: cover;
+    background-position: center center;
+    top: 100px;
+    height: 45vh;
+}
+
+.banner-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 55px;
+    text-align: center;
+    margin: 0;
+    height: 100%;
+}
+
+/* Page Content */
+.email{
+    color: #000;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 90px;
+}
+
+.inquiries{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20%;
+}
