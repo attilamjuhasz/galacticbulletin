@@ -61,6 +61,10 @@
     .blog1-card{
         height: 100% !important;
     }
+    
+    .blog2-card{
+        height: 100% !important;
+    }
 }
 
 @media (max-height: 450px){
