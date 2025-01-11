@@ -8,7 +8,7 @@
     font-family: "Roboto";
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .navbar {
         display: flex;
         flex-direction: column;
