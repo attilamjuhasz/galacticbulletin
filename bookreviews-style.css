@@ -187,7 +187,7 @@ body{
     overflow: hidden;
     text-align: center;
     transition: transform 0.3s;
-    height: 455px;
+    height: 470px;
 }
 
 .blog1-image {
@@ -215,7 +215,7 @@ body{
     overflow: hidden;
     text-align: center;
     transition: transform 0.3s;
-    height: 455px;
+    height: 470px;
 }
 
 .blog2-image {
@@ -270,4 +270,10 @@ body{
 
 .hidden {
     display: none !important; /* Ensure it takes precedence over other styles */
+}
+
+
+.author{
+    color: #6b6b6b;
+    font-size: 15px;
 }
