@@ -11,20 +11,20 @@
     .navbar {
         display: flex;
         flex-direction: column;
+        align-items: flex-start; /* Align links to the left */
         background: #000;
         position: absolute;
         top: 60px;
         right: 10px;
-        width: 200px;
+        width: 180px; /* Decrease width of the dropdown box */
         border-radius: 5px;
         overflow: hidden;
         height: 0;
         opacity: 0;
         transform: scaleY(0);
         transform-origin: top;
-        transition: opacity 0.3s ease;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        transition: opacity 0.3s ease, height 0.3s ease;
+        padding: 5px 10px; /* Reduce padding for a smaller box */
     }
 
     .navbar.active {
@@ -33,17 +33,27 @@
         transform: scaleY(1);
     }
 
-    /* Hamburger icon */
+    .navbar a {
+        margin: 5px 0; /* Adjust space between links */
+        padding: 8px 10px; /* Reduce padding for smaller clickable areas */
+        width: 100%; /* Ensure links take up full width */
+        text-align: left; /* Align text to the left */
+        font-size: 16px; /* Adjust font size if necessary */
+    }
+
+    .navbar a::before {
+        display: none; /* Remove the underline in dropdown */
+    }
+
+    .navbar a:hover::before {
+        display: none; /* Ensure underline does not appear on hover */
+    }
+
     .hamburger {
         display: block;
         font-size: 26px;
         color: #fff;
         cursor: pointer;
-    }
-
-    /* Remove underline effect for navbar links when in dropdown mode */
-    .navbar a::before {
-        display: none;
     }
 }
 
@@ -76,14 +86,22 @@ body {
     font-weight: 700;
 }
 
+.navbar {
+    display: flex;
+    justify-content: flex-end; /* Align links to the right */
+    align-items: center;
+    flex-wrap: nowrap; /* Prevent wrapping */
+}
+
 .navbar a {
     position: relative;
     font-size: 18px;
     color: #fff;
     font-weight: 500;
     text-decoration: none;
-    margin-left: 40px;
+    margin-left: 20px; /* Adjust margin to reduce spacing if needed */
 }
+
 
 .navbar a::before {
     content: '';
