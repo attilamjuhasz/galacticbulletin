@@ -111,11 +111,10 @@ body{
     padding-right: 5%;
 }
 
-.logo {
-    font-size: 26px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 700;
+.logo img {
+    width: 30px;
+    height: auto;
+    display: block;
 }
 
 .navbar {
