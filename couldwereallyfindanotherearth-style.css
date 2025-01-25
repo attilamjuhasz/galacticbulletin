@@ -62,15 +62,15 @@
     }
 }
 
-@media (max-width: 450px){
-    .banner-text{
-        font-size: 13px !important;
-    }
-}
-
 @media (max-width: 950px){
     .banner-text{
         font-size: 28px !important;
+    }
+}
+
+@media (max-width: 450px){
+    .banner-text{
+        font-size: 13px !important;
     }
 }
 
