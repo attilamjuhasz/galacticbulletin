@@ -62,22 +62,15 @@
     }
 }
 
-
-@media (max-width: 820px){
-    .banner-text{
-        font-size: 28px !important;
-    }
-}
-
-@media (max-height: 550px){
-    #title{
-        font-size: 32px !important;
-    }
-}
-
 @media (max-width: 450px){
     .banner-text{
-        font-size: 15px !important;
+        font-size: 23px !important;
+    }
+}
+
+@media (max-height: 450px){
+    #title{
+        font-size: 32px !important;
     }
 }
 
@@ -115,22 +108,18 @@ body{
 
 .navbar {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end; /* Align links to the right */
     align-items: center;
     flex-wrap: nowrap; /* Prevent wrapping */
-    padding: 10px 20px; /* Consistent padding */
-    height: 50px; /* Fixed height */
 }
 
-/* Adjust the navbar links' padding to make it more consistent */
 .navbar a {
     position: relative;
     font-size: 18px;
     color: #fff;
     font-weight: 500;
     text-decoration: none;
-    margin-left: 20px;
-    padding: 0 10px; /* Consistent padding for each link */
+    margin-left: 20px; /* Adjust margin to reduce spacing if needed */
 }
 
 
@@ -150,7 +139,7 @@ body{
 }
 
 .banner {
-    background-image: url(CosmicCannibalism-mainimage.jpg);
+    background-image: url(images/mars–the-red-frontier/marstheredfrontier-mainimage.jpg);
     background-size: cover;
     background-position: center center;
     top: 100px;
@@ -165,7 +154,7 @@ body{
     color: #fff;
     background-color: transparent;
     text-align: center;
-    font-size: 40px;
+    font-size: 32px;
     margin: 0;
     height: 110%;
 }
