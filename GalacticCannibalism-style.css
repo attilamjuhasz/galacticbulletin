@@ -150,7 +150,7 @@ body{
 }
 
 .banner {
-    background-image: url(CosmicCannibalism-mainimage.jpg);
+    background-image: url(images/galactic-cannibalism/GalacticCannibalism-mainimage.jpg);
     background-size: cover;
     background-position: center center;
     top: 100px;
@@ -198,7 +198,7 @@ h2{
 p{
     padding: 10px 20px;
     margin: 0;
-    line-height: 1.6;
+    line-height: 2;
     text-indent: 5.5%;
 }
 
