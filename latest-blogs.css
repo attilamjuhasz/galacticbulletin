@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Raleway:wght@700&display=swap);
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,12 +11,14 @@
     .navbar {
         display: flex;
         flex-direction: column;
-        align-items: flex-start; /* Align links to the left */
+        align-items: flex-start;
+        /* Align links to the left */
         background: #000;
         position: absolute;
         top: 60px;
         right: 10px;
-        width: 180px; /* Decrease width of the dropdown box */
+        width: 180px;
+        /* Decrease width of the dropdown box */
         border-radius: 5px;
         overflow: hidden;
         height: 0;
@@ -24,7 +26,8 @@
         transform: scaleY(0);
         transform-origin: top;
         transition: opacity 0.3s ease, height 0.3s ease;
-        padding: 5px 10px; /* Reduce padding for a smaller box */
+        padding: 5px 10px;
+        /* Reduce padding for a smaller box */
     }
 
     .navbar.active {
@@ -34,19 +37,26 @@
     }
 
     .navbar a {
-        margin: 5px 0; /* Adjust space between links */
-        padding: 8px 10px; /* Reduce padding for smaller clickable areas */
-        width: 100%; /* Ensure links take up full width */
-        text-align: left; /* Align text to the left */
-        font-size: 16px; /* Adjust font size if necessary */
+        margin: 5px 0;
+        /* Adjust space between links */
+        padding: 8px 10px;
+        /* Reduce padding for smaller clickable areas */
+        width: 100%;
+        /* Ensure links take up full width */
+        text-align: left;
+        /* Align text to the left */
+        font-size: 16px;
+        /* Adjust font size if necessary */
     }
 
     .navbar a::before {
-        display: none; /* Remove the underline in dropdown */
+        display: none;
+        /* Remove the underline in dropdown */
     }
 
     .navbar a:hover::before {
-        display: none; /* Ensure underline does not appear on hover */
+        display: none;
+        /* Ensure underline does not appear on hover */
     }
 
     .hamburger {
@@ -57,31 +67,59 @@
     }
 }
 
-@media (max-width: 450px){
-    .banner-text{
+@media (max-width: 450px) {
+    .banner-text {
         font-size: 32px !important;
     }
 }
 
-@media (max-height: 450px){
-    .banner-text{
+@media (max-height: 450px) {
+    .banner-text {
         font-size: 32px !important;
     }
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.card>a {
+    flex: 0 0 calc(33.33% - 20px);
+    min-width: 250px;
+    display: block;
+}
+
+.blog1-card,
+.blog2-card,
+.blog3-card,
+.blog4-card {
+    width: 100%;
+    margin: 0;
 }
 
 @media (max-width: 875px) {
-    .card {
-        flex-wrap: wrap;
-        /* Allow wrapping of the cards */
-        justify-content: space-between;
-        /* Adjust spacing between cards */
-    }
 
     .blog1-card,
     .blog2-card,
-    .blog3-card {
-        width: 45%;
-        /* Set card width to 45% for two cards per row */
+    .blog3-card,
+    .blog4-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 580px) {
+
+    .blog1-card,
+    .blog2-card,
+    .blog3-card,
+    .blog4-card {
+        width: 100%;
     }
 }
 
@@ -89,14 +127,14 @@
     display: none;
 }
 
-body{
+body {
     min-height: 100vh;
     background-size: cover;
     background-position: center;
     background-color: #fff;
 }
 
-.header{
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -119,9 +157,11 @@ body{
 
 .navbar {
     display: flex;
-    justify-content: flex-end; /* Align links to the right */
+    justify-content: flex-end;
+    /* Align links to the right */
     align-items: center;
-    flex-wrap: nowrap; /* Prevent wrapping */
+    flex-wrap: nowrap;
+    /* Prevent wrapping */
 }
 
 .navbar a {
@@ -130,7 +170,8 @@ body{
     color: #fff;
     font-weight: 500;
     text-decoration: none;
-    margin-left: 20px; /* Adjust margin to reduce spacing if needed */
+    margin-left: 20px;
+    /* Adjust margin to reduce spacing if needed */
 }
 
 .navbar a::before {
@@ -148,14 +189,14 @@ body{
     width: 100%;
 }
 
-.banner{
+.banner {
     background-image: url(images/lastest-blogs/latest-blogs-main-image.png);
     background-size: cover;
     background-position: center center;
     height: 45vh;
 }
 
-.banner-text{
+.banner-text {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -316,6 +357,9 @@ body{
     display: flex;
     justify-content: center;
     margin: 20px 0;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0 20px;
 }
 
 #blog-search {
@@ -332,4 +376,14 @@ body{
 
 #blog-search:focus {
     border-color: #000;
+}
+
+#filter-dropdown {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 150px;
 }
