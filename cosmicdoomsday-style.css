@@ -71,13 +71,13 @@
 
 @media (max-width: 450px){
     .banner-text{
-        font-size: 23px !important;
+        font-size: 16px !important;
     }
 }
 
 @media (max-height: 450px){
     #title{
-        font-size: 32px !important;
+        font-size: 16px !important;
     }
 }
 
