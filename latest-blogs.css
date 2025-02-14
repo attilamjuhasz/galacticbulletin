@@ -82,16 +82,15 @@
 .card {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
     gap: 20px;
     padding: 20px;
     margin: 0 auto;
     max-width: 1200px;
+    justify-content: center;
 }
 
 .card>a {
-    flex: 0 0 calc(33.33% - 20px);
-    min-width: 250px;
+    width: 280px;
     display: block;
 }
 
@@ -104,22 +103,24 @@
 }
 
 @media (max-width: 875px) {
+    .card {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-    .blog1-card,
-    .blog2-card,
-    .blog3-card,
-    .blog4-card {
+    .card>a {
         width: calc(50% - 20px);
+        max-width: 280px;
     }
 }
 
 @media (max-width: 580px) {
-
-    .blog1-card,
-    .blog2-card,
-    .blog3-card,
-    .blog4-card {
-        width: 100%;
+    .card {
+        justify-content: center;
+    }
+    
+    .card>a {
+        width: 280px;
     }
 }
 
