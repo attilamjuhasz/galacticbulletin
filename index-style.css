@@ -60,16 +60,22 @@
 @media (max-width: 875px) {
     .card {
         flex-wrap: wrap;
-        /* Allow wrapping of the cards */
-        justify-content: space-between;
-        /* Adjust spacing between cards */
+        justify-content: center;
     }
 
-    .blog1-card,
-    .blog2-card,
-    .blog3-card {
-        width: 45%;
-        /* Set card width to 45% for two cards per row */
+    .card>a {
+        width: calc(50% - 20px);
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 580px) {
+    .card {
+        justify-content: center;
+    }
+
+    .card>a {
+        width: 280px;
     }
 }
 
@@ -185,12 +191,27 @@ body {
 
 .card {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
     margin: 0 auto;
+    max-width: 1200px;
+    justify-content: center;
 }
+
+.card>a {
+    width: 280px;
+    display: block;
+}
+
+.blog1-card,
+.blog2-card,
+.blog3-card,
+.blog4-card {
+    width: 100%;
+    margin: 0;
+}
+
 
 .blog1-card-link {
     text-decoration: none;

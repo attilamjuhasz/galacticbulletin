@@ -102,6 +102,12 @@
     margin: 0;
 }
 
+@media (max-width: 934px) {
+    #description {
+        font-size: 9px !important;
+    }
+}
+
 @media (max-width: 875px) {
     .card {
         flex-wrap: wrap;
