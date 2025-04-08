@@ -202,6 +202,7 @@ body {
 .card>a {
     width: 280px;
     display: block;
+    order: 0; /* Default order */
 }
 
 .blog1-card,
@@ -312,6 +313,8 @@ body {
     width: 100%;
     height: 150px;
     object-fit: cover;
+    will-change: transform;
+    contain: content;
 }
 
 .blog3-info {
