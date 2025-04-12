@@ -87,12 +87,6 @@
     }
 }
 
-@media (max-height: 590px) {
-    .banner-text {
-        font-size: 25px !important;
-    }
-}
-
 
 
 body {
