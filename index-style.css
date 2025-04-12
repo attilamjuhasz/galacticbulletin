@@ -23,12 +23,14 @@
     .navbar {
         display: flex;
         flex-direction: column;
-        align-items: flex-start; /* Align links to the left */
+        align-items: flex-start;
+        /* Align links to the left */
         background: #000;
         position: absolute;
         top: 60px;
         right: 10px;
-        width: 180px; /* Decrease width of the dropdown box */
+        width: 180px;
+        /* Decrease width of the dropdown box */
         border-radius: 5px;
         overflow: hidden;
         height: 0;
@@ -36,7 +38,8 @@
         transform: scaleY(0);
         transform-origin: top;
         transition: opacity 0.3s ease, height 0.3s ease;
-        padding: 5px 10px; /* Reduce padding for a smaller box */
+        padding: 5px 10px;
+        /* Reduce padding for a smaller box */
     }
 
     .navbar.active {
@@ -46,19 +49,26 @@
     }
 
     .navbar a {
-        margin: 5px 0; /* Adjust space between links */
-        padding: 8px 10px; /* Reduce padding for smaller clickable areas */
-        width: 100%; /* Ensure links take up full width */
-        text-align: left; /* Align text to the left */
-        font-size: 16px !important; /* Adjust font size if necessary */
+        margin: 5px 0;
+        /* Adjust space between links */
+        padding: 8px 10px;
+        /* Reduce padding for smaller clickable areas */
+        width: 100%;
+        /* Ensure links take up full width */
+        text-align: left;
+        /* Align text to the left */
+        font-size: 16px !important;
+        /* Adjust font size if necessary */
     }
 
     .navbar a::before {
-        display: none; /* Remove the underline in dropdown */
+        display: none;
+        /* Remove the underline in dropdown */
     }
 
     .navbar a:hover::before {
-        display: none; /* Ensure underline does not appear on hover */
+        display: none;
+        /* Ensure underline does not appear on hover */
     }
 
     .hamburger {
@@ -87,7 +97,11 @@
     }
 }
 
-
+@media (max-height: 590px) {
+    .banner-text {
+        font-size: 25px !important;
+    }
+}
 
 body {
     min-height: 100vh;
@@ -171,7 +185,7 @@ body {
 }
 
 
-article > img {
+article>img {
     opacity: 0;
     scale: 0.8;
     animation: fade-in 1s forwards;
@@ -181,10 +195,13 @@ article > img {
 }
 
 @keyframes fade-in {
-    to { scale: 1; opacity: 1;}
-} 
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
 
-p{
+p {
     text-align: center;
     color: white;
     padding: 25px;
@@ -193,7 +210,7 @@ p{
     font-size: 40px;
 }
 
-.welcome{
+.welcome {
     text-align: center;
     color: black;
     padding: 25px;
@@ -204,7 +221,10 @@ p{
 }
 
 @keyframes text {
-    to { scale: 1; opacity: 1;}
+    to {
+        scale: 1;
+        opacity: 1;
+    }
 }
 
 .welcome-section {
