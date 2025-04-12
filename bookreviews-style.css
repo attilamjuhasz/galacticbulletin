@@ -38,7 +38,7 @@
         padding: 8px 10px; /* Reduce padding for smaller clickable areas */
         width: 100%; /* Ensure links take up full width */
         text-align: left; /* Align text to the left */
-        font-size: 16px; /* Adjust font size if necessary */
+        font-size: 16px !important; /* Adjust font size if necessary */
     }
 
     .navbar a::before {
@@ -58,9 +58,9 @@
 }
 
 
-@media (max-width: 750px){
+@media (max-width: 650px){
     .banner-text{
-        font-size: 40px !important;
+        font-size: 55px !important;
     }
 }
 
@@ -169,7 +169,7 @@ body{
     background-image: url(images/book-reviews/bookreviews-mainimage.png);
     background-size: cover;
     background-position: center center;
-    height: 45vh;
+    height: 55vh;
 }
 
 .banner-text{
@@ -178,7 +178,7 @@ body{
     align-items: center;
     text-align: center;
     color: #fff;
-    font-size: 55px;
+    font-size: 80px;
     margin: 0;
     height: 100%;
 }
@@ -295,4 +295,50 @@ body{
 .author{
     color: #6b6b6b;
     font-size: 15px;
+}
+
+.cta-section {
+    text-align: center;
+    padding: 10px 20px;
+    margin: 40px 0;
+}
+
+.cta-section h2 {
+    color: #000;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    color: #888;
+    font-size: 18px;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 40px;
+    background: #e94560;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 18px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+    background: #d63851;
+}
+
+@media (max-width: 768px) {
+    .features-container {
+        grid-template-columns: 1fr;
+        padding: 20px 5%;
+    }
+
+    .cta-section {
+        padding: 40px 20px;
+    }
 }

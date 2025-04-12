@@ -39,7 +39,7 @@
         padding: 8px 10px; /* Reduce padding for smaller clickable areas */
         width: 100%; /* Ensure links take up full width */
         text-align: left; /* Align text to the left */
-        font-size: 16px; /* Adjust font size if necessary */
+        font-size: 16px !important; /* Adjust font size if necessary */
     }
 
     .navbar a::before {
@@ -58,9 +58,21 @@
     }
 }
 
+@media (max-width: 720px){
+    .banner-text{
+        font-size: 70px !important;
+    }
+}
+
+@media (max-width: 570px){
+    .banner-text{
+        font-size: 60px !important;
+    }
+}
+
 @media (max-width: 450px){
     .banner-text{
-        font-size: 32px !important;
+        font-size: 40px !important;
     }
     
     .all-content h2{
@@ -154,7 +166,7 @@ body{
     background-size: cover;
     background-position: center center;
     top: 100px;
-    height: 45vh;
+    height: 55vh;
 }
 
 .banner-text{
@@ -162,7 +174,7 @@ body{
     justify-content: center;
     align-items: center;
     color: #fff;
-    font-size: 55px;
+    font-size: 100px;
     text-align: center;
     margin: 0;
     height: 100%;

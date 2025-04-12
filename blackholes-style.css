@@ -39,7 +39,7 @@
         padding: 8px 10px; /* Reduce padding for smaller clickable areas */
         width: 100%; /* Ensure links take up full width */
         text-align: left; /* Align text to the left */
-        font-size: 16px; /* Adjust font size if necessary */
+        font-size: 16px !important; /* Adjust font size if necessary */
     }
 
     .navbar a::before {
