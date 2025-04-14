@@ -1,3 +1,4 @@
+
 // Modal functionality
 const modal = document.getElementById('imageModal');
 const modalImg = document.getElementById('modalImage');
@@ -25,13 +26,38 @@ modal.addEventListener('click', function(event) {
     }
 });
 
+// Scroll event handler for photo dates
+function updatePhotoVisibility() {
+    const photos = document.querySelectorAll('.photo-container');
+    const viewportHeight = window.innerHeight;
+    const viewportCenter = viewportHeight / 2;
+    const threshold = 100; // pixels from center
+
+    photos.forEach(photo => {
+        const rect = photo.getBoundingClientRect();
+        const elementCenter = rect.top + (rect.height / 2);
+        const distanceFromCenter = Math.abs(elementCenter - viewportCenter);
+
+        if (distanceFromCenter < threshold) {
+            photo.classList.add('in-view');
+        } else {
+            photo.classList.remove('in-view');
+        }
+    });
+}
+
+// Add scroll event listener
+window.addEventListener('scroll', updatePhotoVisibility);
+// Initial check
+window.addEventListener('load', updatePhotoVisibility);
+
 // Hamburger menu functionality
-document.querySelector('.hamburger').addEventListener('click', function () {
+document.querySelector('.hamburger').addEventListener('click', function() {
     document.querySelector('.navbar').classList.toggle('active');
 });
 
 // Close the dropdown when clicking outside
-document.addEventListener('click', function (event) {
+document.addEventListener('click', function(event) {
     const navbar = document.querySelector('.navbar');
     const hamburger = document.querySelector('.hamburger');
     if (!navbar.contains(event.target) && !hamburger.contains(event.target)) {
@@ -40,6 +66,6 @@ document.addEventListener('click', function (event) {
 });
 
 // Close the dropdown on scroll
-window.addEventListener('scroll', function () {
+window.addEventListener('scroll', function() {
     document.querySelector('.navbar').classList.remove('active');
 });

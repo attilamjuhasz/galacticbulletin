@@ -207,6 +207,8 @@ body {
     gap: 20px;
     padding: 20px;
     margin-top: 20px;
+    justify-items: center;
+    max-width: 100%;
 }
 
 .photo-container {
@@ -237,13 +239,14 @@ body {
     color: white;
     padding: 10px;
     text-align: center;
-    transform: translateY(100%);
-    transition: transform 0.2s ease;
-    will-change: transform;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    will-change: opacity;
+    pointer-events: none;
 }
 
-.photo-container:hover .photo-info {
-    transform: translateY(0);
+.photo-container.in-view .photo-info {
+    opacity: 1;
 }
 
 .modal {
