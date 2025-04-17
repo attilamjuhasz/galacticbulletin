@@ -255,6 +255,9 @@ p {
     padding: 20px;
     text-align: center;
     transition: transform 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 .feature-card:hover {
