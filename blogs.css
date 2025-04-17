@@ -375,6 +375,13 @@ body {
     font-size: 27.63px;
 }
 
+.blog6-info {
+    padding: 10px;
+}
+.blog6-info h2 {
+    font-size: 22px;
+}
+
 
 #description {
     font-size: 10px;
