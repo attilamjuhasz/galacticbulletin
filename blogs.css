@@ -261,6 +261,10 @@ body {
     padding: 10px;
 }
 
+.blog1-info h2 {
+    font-size: 25.5px;
+}
+
 
 .blog2-card-link {
     text-decoration: none;
