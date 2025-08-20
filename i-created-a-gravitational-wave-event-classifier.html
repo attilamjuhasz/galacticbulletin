@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T783SN413G"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-T783SN413G');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2191651266211798"
+    crossorigin="anonymous"></script>
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="PcFRrJAdO/iIT4hYjXuOQw" async></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Created a Gravitational Wave Event Classifier - Galactic Bulletin</title>
+    <meta name="description" content="Through the use of machine learning, I created an AI that can predict whether an exoplanet is habitable, saving hours in the lab.">
+    <meta name="keywords" content="Attila Juhasz, Galactic, Bulletin, Galactic Bulletin, Universe, Cosmos, Attila, Juhasz, Space, My AI That Predicts Exoplanet Habitability, AI, artificial intelligence, artificial, intelligence, predict, predicts, exoplanet, habitability, machine, learning, machine learning">
+    <meta name="author" content="Attila Juhasz">
+    <link rel="stylesheet" href="i-created-a-gravitational-wave-event-classifier-style.css">
+    <link rel="shortcut icon" type="x-icon" href="galacticbulletin-icon.png">
+    <script src="https://kit.fontawesome.com/5a7d261f0c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="/" class="logo">
+            <img src="galacticbulletin-websiteicon.png" alt="website-logo">
+        </a>
+        <i class="fa-solid fa-bars hamburger"></i>
+        <nav class="navbar">
+            <a href="blogs.html">Blogs</a>
+            <a href="book-reviews.html">Book Reviews</a>
+            <a href="astrophotography.html">Astrophotography</a>
+            <a href="about-me.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+
+    <header class="banner">
+        <div class="banner-text">
+            <h1>
+                <span id="title">I Created a Gravitational Wave Event Classifier</span><br><sup id="author">By Attila Juhasz on August 20th, 2025</sup>
+            </h1>
+        </div>
+    </header>
+
+
+    <div class="all-content">
+        <h2>What are Gravitational Waves?</h2>
+        <br>
+        <p>The most mind-bending phenomenon in the entirety of the cosmos is gravitational waves. When two massive celestial objects approach each other, they can begin to orbit. As the two objects accelerate each other, their orbits <i>literally</i> create ripples in the fabric of space-time. Analogously, if you threw a rock into a pond, ripples would propagate across the surface. In this situation, the surface of the pond represents the fabric of space.</p>
+        <br>
+        <p>The most common events that cause these waves are binary black hole mergers (BBH), binary neutron star mergers (BNS), and black hole–neutron star mergers (BHNS). In layman's terms, this happens when either two black holes, two neutron stars, or a black hole and a neutron star orbit each other and eventually collide or merge. Below is a video that shows what these mergers and waves look like (credit: NASA and GSFC):</p>
+        <video controls>
+            <source src="images/i-created-a-gravitational-wave-event-classifier/gravwav.mp4">
+            This browser does not support HTML 5 Video
+        </video>
+        <h2>What My Program Does</h2>
+        <br>
+        <p>This program (as the name suggests) analyzes an input gravitational wave signal and classifies the event as either a BBH, BNS, or BHNS. To run it, go into the console and execute python console_main.py. It will ask whether you want to generate synthetic data or use your own data file. If you choose to generate synthetic data, the program will create a mock gravitational wave file and analyze it. If you choose to use your own data, you will need to input the file location, and the program will analyze it accordingly.</p>
+        <br>
+        <p>Once it has finished inspecting the data, it will output a prediction on whether it was a BBH, BNS, or a BHNS merger with a percentage probability for each. It will also give you multiple plots: Gravitational Wave Signal, Classification Results, Frequency Spectrum, 3D Spectrogram Surface, and a 3D Phase Space Trajectory.</p>
+        <br>
+        <p>The Gravitational Wave Signal plot shows the raw gravitational wave signal over time. These graphs can display the classic gravitational wave signature of objects spiraling faster as they get closer. The Classification Results plot is a simple bar graph showing how confident the program is about each type of cosmic event. The Frequency Spectrum is a spectrogram that shows how the signal's frequency changes over time—different event types have different frequency patterns. The 3D Spectrogram Surface is a 3D view of the frequency spectrum, giving you a better picture of how the signal evolves in both time and frequency. Lastly, the 3D Phase Space Trajectory is the most complex graph of the five, but can also be the most useful. It shows how the signal evolves in three dimensions, which can help determine which types of cosmic objects are colliding.</p>
+        <br>
+        <h2>How it Works</h2>
+        <br>
+        <p>When you run the Python file, the program loads all its tools for math, graphics, and signal analysis. It then prints a message in the console asking what type of data you want to analyze (your own or synthetic). Once you decide (let's say you added your own data, though the process is almost the same), it takes the messy, raw numbers and makes them neat and consistent. It removes the background noise and then extracts exactly 2,048 data points. It examines how loud the signal becomes, what pitch it has (high or low frequency), how the pitch changes over time, and how much the signal wiggles around.</p>
+        <br>
+        <p>It will then compare the results with known physical principles of how these waves behave to give a prediction of what type of event it was, along with the percentage chance for each event type. After that, it saves all the graphs it creates to the program folder and explains each one in the console. Below, you can see how the program runs:</p>
+        <video controls>
+            <source src="images/i-created-a-gravitational-wave-event-classifier/gwec-run.mp4">
+            This browser does not support HTML 5 Video
+        </video>
+        <p>This project took a really long time to finish. It was my most ambitious project aside from the radio telescope. I still plan to do software-related projects, but I'm going to channel most of my energy toward the radio telescope because I find it the most fun and interesting. Make sure to tune in to future blogs to keep track of my progress. In the meantime, stay curious.</p>
+    </div>
+
+
+    <div id="buttons">
+        <a class="latest-button" href="blogs.html">Blogs</a>
+        <a class="home-button" href="/">Home</a>
+        <a class="citations-button" href="i-created-a-gravitational-wave-event-classifier-citations.html">View Blog's Citations</a>
+    </div>
+
+
+    <script src="universal-script.js"></script>
+</body>
+</html>
