@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T783SN413G"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-T783SN413G');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2191651266211798"
+    crossorigin="anonymous"></script>
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="PcFRrJAdO/iIT4hYjXuOQw" async></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telescope is Ready For Motion - Galactic Bulletin</title>
+    <meta name="description" content="Throughout Earth's history, it has experienced numerous asteroid impacts, but none have significantly affected human civilization. But what if an asteroid were heading directly toward us in the near future? What would we do?">
+    <meta name="keywords" content="Attila Juhasz, Galactic, Bulletin, Galactic Bulletin, Universe, Cosmos, Attila, Juhasz, Space, My AI That Predicts Exoplanet Habitability, AI, artificial intelligence, artificial, intelligence, predict, predicts, exoplanet, habitability, machine, learning, machine learning">
+    <meta name="author" content="Attila Juhasz">
+    <link rel="stylesheet" href="telescope-is-ready-for-motion.css">
+    <link rel="shortcut icon" type="x-icon" href="galacticbulletin-icon.png">
+    <script src="https://kit.fontawesome.com/5a7d261f0c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="/" class="logo">
+            <img src="galacticbulletin-websiteicon.png" alt="website-logo">
+        </a>
+        <i class="fa-solid fa-bars hamburger"></i>
+        <nav class="navbar">
+            <a href="blogs.html">Blogs</a>
+            <a href="book-reviews.html">Book Reviews</a>
+            <a href="astrophotography.html">Astrophotography</a>
+            <a href="about-me.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+
+    <header class="banner">
+        <div class="banner-text">
+            <h1>
+                <span id="title">Update 9: Telescope is Ready For Motion</span><br><sup id="author">By Attila Juhasz on October 13th, 2025</sup>
+            </h1>
+        </div>
+    </header>
+
+
+    <div class="all-content">
+        <h2>It's Function</h2>
+        <br>
+        <p>This motor is the cornerstone of the mechanical side of the project, allowing the radio telescope to rotate its dish and tilt it in the y–z plane. The stepper motor, by itself, is pretty useless without a way to connect it to the dish. I plan to do this with a set of 3D-printed gears and some adapter pieces that trade speed for torque, allowing the motor to move the dish's heavy load.</p>
+        <br>
+        <p>Eventually, I'll make another circuit just like this one, because one stepper motor won't allow the dish to move in all the ways I want. Right now, the motors only allow manual movement via a potentiometer. Once the whole telescope is built, I'll modify the motors' code so I can track objects across the sky and map the Milky Way.</p>
+        <br>
+        <h2>The Circuit</h2>
+        <p>This is by far the most complex circuit I have ever built. To someone into electronics, it might look straightforward—a simple stepper motor build. I, on the other hand, am new to this and was afraid I'd blow up the decoupling capacitor every time I let current flow through the circuit. Despite that, I got through the development process, only causing a short circuit a few times. Now that's impressive.</p>
+        <video controls>
+            <source src="images/telescope-is-ready-for-motion/IMG_5498.mp4">
+            This browser does not support HTML 5 Video
+        </video>
+        <p>This circuit is composed of an Arduino Uno R3, a stepper motor driver, a NEMA 17 stepper motor, a potentiometer, and a battery pack. The Arduino controls the operations of the circuit, a separate 12V battery pack provides power to the motor, a decoupling capacitor smooths out any voltage spikes (basically smooths out any noisy current and makes it safe for the electronics), and a potentiometer controls the voltage running through the circuit, which the Arduino then reads and alters the motor's speed and/or direction.</p>
+        <br>
+        <p>Very soon, I'll be 3D printing parts like gears and a case for all the electronics, so stay tuned for that. In the meantime, stay curious and cosmic.</p>
+    </div>
+
+
+    <div id="buttons">
+        <a class="latest-button" href="blogs.html">Blogs</a>
+        <a class="home-button" href="/">Home</a>
+    </div>
+
+
+    <script src="universal-script.js"></script>
+</body>
+</html>
