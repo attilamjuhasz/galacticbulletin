@@ -62,9 +62,15 @@
     }
 }
 
-@media (max-width: 450px){
+@media (max-width: 650px){
     .banner-text{
         font-size: 23px !important;
+    }
+}
+
+@media (max-width: 450px){
+    .banner-text{
+        font-size: 20px !important;
     }
 }
 
@@ -154,7 +160,7 @@ body{
     color: #fff;
     background-color: transparent;
     text-align: center;
-    font-size: 32px;
+    font-size: 28px;
     margin: 0;
     height: 110%;
 }
