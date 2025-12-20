@@ -58,13 +58,13 @@
     }
 
     .banner-text{
-        font-size: 22px !important;
+        font-size: 27px !important;
     }
 }
 
 @media (max-width: 450px){
     .banner-text{
-        font-size: 19px !important;
+        font-size: 23px !important;
     }
 }
 
@@ -154,7 +154,7 @@ body{
     color: #fff;
     background-color: transparent;
     text-align: center;
-    font-size: 25px;
+    font-size: 35px;
     margin: 0;
     height: 110%;
 }
