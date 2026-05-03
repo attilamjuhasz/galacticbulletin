@@ -393,6 +393,13 @@ body {
     font-size: 20.199999px;
 }
 
+.blog8-info {
+    padding: 10px;
+}
+.blog8-info h2 {
+    font-size: 30px;
+}
+
 
 #description {
     font-size: 10px;
