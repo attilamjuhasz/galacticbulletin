@@ -26,31 +26,6 @@ modal.addEventListener('click', function(event) {
     }
 });
 
-// Scroll event handler for photo dates
-function updatePhotoVisibility() {
-    const photos = document.querySelectorAll('.photo-container');
-    const viewportHeight = window.innerHeight;
-    const viewportCenter = viewportHeight / 2;
-    const threshold = 100; // pixels from center
-
-    photos.forEach(photo => {
-        const rect = photo.getBoundingClientRect();
-        const elementCenter = rect.top + (rect.height / 2);
-        const distanceFromCenter = Math.abs(elementCenter - viewportCenter);
-
-        if (distanceFromCenter < threshold) {
-            photo.classList.add('in-view');
-        } else {
-            photo.classList.remove('in-view');
-        }
-    });
-}
-
-// Add scroll event listener
-window.addEventListener('scroll', updatePhotoVisibility);
-// Initial check
-window.addEventListener('load', updatePhotoVisibility);
-
 // Hamburger menu functionality
 document.querySelector('.hamburger').addEventListener('click', function() {
     document.querySelector('.navbar').classList.toggle('active');
